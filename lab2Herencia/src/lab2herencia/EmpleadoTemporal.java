@@ -20,7 +20,7 @@ public class EmpleadoTemporal extends Empleado{
     @Override
     public double calculoPago() {
         Calendar hoy = Calendar.getInstance();
-        if (hoy.after(fechaFinContrato)) {   // más claro que compareTo
+        if (hoy.after(fechaFinContrato)) { 
             return 0.0;
         }
         return super.calculoPago();
