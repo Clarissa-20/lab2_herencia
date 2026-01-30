@@ -54,7 +54,7 @@ public class Empresa {
     public double calcularPago(int codigo) {
         Empleado e = buscarEmpleadoPorCodigo(codigo);
         if (e == null) throw new IllegalArgumentException("Empleado no encontrado.");
-        return e.calculoPago(); // polimorfismo
+        return e.calculoPago();
     }
 
     public String reporte() {
